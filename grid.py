@@ -2,8 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Grille de jeu
-grid = np.zeros((3,3))
-print(grid)
+
 
 # Utiliser Pyplot pour dessiner les lignes de la grille.
 def draw_grid():
