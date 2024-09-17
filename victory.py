@@ -16,7 +16,7 @@ print(f'au départ, x = {x}')
 print(f'au départ, o = {o}')
 
 def victory():
-
+    winner = None
     global x, o
     # meme symbole sur toute une ligne
     for row in grid:
@@ -35,11 +35,20 @@ def victory():
         x += 3
     if all(grid[i][i] == 'o' for i in range(len(grid))):
         o += 3
-    
     if all(grid[i][len(grid)-1-i] == 'x' for i in range(len(grid))):
         x += 3
     if all(grid[i][len(grid)-1-i] == 'o' for i in range(len(grid))):
         o += 3
+    
+    if o == 3:
+        print("Joueur o à gagné")
+        winner = 'joueur o'
+        return winner
+    
+    if x == 3:
+        print("Joueur x à gagné")
+        winner = 'joueur x'
+        return winner
 
 
 
