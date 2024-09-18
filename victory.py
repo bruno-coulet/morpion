@@ -12,12 +12,13 @@ grid = [[1, 1,'o'],
 
 x=0
 o=0
+winner = None
 print(f'au départ, x = {x}')
 print(f'au départ, o = {o}')
 
 def victory():
-    winner = None
-    global x, o
+    
+    global x, o, winner
     # meme symbole sur toute une ligne
     for row in grid:
         if all(case == 'x' for case in row):
