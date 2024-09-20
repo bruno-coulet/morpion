@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from desinee_grid import draw_board, draw_cercle, draw_cross  
-from verif_board import is_winner, draw_mark, is_board_full
+from modules.desinee_grid import draw_board, draw_cercle, draw_cross  
+from modules.verif_board import is_winner, draw_mark, is_board_full
 
 def play_game():
     plt.ion()
