@@ -43,7 +43,7 @@ def test_tie():
     board = np.array([
         ['X', 'O', 'X'],
         ['O', 'X', 'O'],
-        ['O', 'X', 'X']
+        ['O', 'X', 'O']
     ])
     assert is_winner(board, 'X') == False 
 
