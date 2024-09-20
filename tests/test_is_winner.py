@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-from verif_board import is_winner  
+from modules.verif_board import is_winner  
 
 def test_winner_row():
     # Caso de prueba: Ganador en una fila
